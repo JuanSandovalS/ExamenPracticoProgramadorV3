@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos Numéricos</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Archivo CSS -->
+</head>
+<body> 
+    <main>
+        <section>
+            <h2>1. Calcular Factorial</h2>
+            <form id="formFactorial">
+                <label for="inputFactorial">Ingrese un número:</label>
+                <input type="number" id="inputFactorial" required>
+                <button type="submit">Calcular Factorial</button>
+            </form>
+            <p id="resultadoFactorial"></p>
+        </section>
+
+        <section>
+            <h2>2. Tabla de Amortización</h2>
+            <form id="formAmortizacion">
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" required><br>
+                <label for="tasaInteres">Interés mensual (%):</label>
+                <input type="number" id="tasaInteres" step="0.01" required><br>
+                <label for="meses">Plazo (meses):</label>
+                <input type="number" id="meses" required><br>
+                <button type="submit">Calcular Amortización</button>
+            </form>
+            <table id="tablaAmortizacion">
+                <thead>
+                    <tr>
+                        <th>Período</th>
+                        <th>Saldo</th>
+                        <th>Interés</th>
+                        <th>Abono</th>
+                        <th>Pago</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3. Potencia de Binomios</h2>
+            <form id="formBinomio">
+                <label for="potenciaBinomio">Ingrese la potencia (n):</label>
+                <input type="number" id="potenciaBinomio" required>
+                <button type="submit">Calcular Binomio</button>
+            </form>
+            <p id="resultadoBinomio"></p>
+        </section>
+    </main>
+    <script src="js/algoritmo.js"></script>  
+
+</body>
+</html>
